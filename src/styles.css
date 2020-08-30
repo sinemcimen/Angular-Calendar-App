@@ -1,0 +1,85 @@
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-angular-navigations/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+/* You can add global styles to this file, and also import other style files */
+
+.e-schedule {
+    box-shadow: 0px 8px 20px rgba(0,0,0,.3);
+    position: relative;
+}
+.e-schedule .e-month-view .e-date-header-wrap table td.e-header-cells{
+    font-family: 'Roboto', sans-serif;
+    background: #9675CE !important;
+    text-align: center !important;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+}
+.e-schedule .e-schedule-toolbar .e-tbar-btn:hover, .e-schedule .e-schedule-toolbar .e-tbar-btn:focus{
+    background:transparent !important;
+}
+
+.e-toolbar-right{
+    border:2px solid rgba(150, 117, 206,.75);
+    border-radius: 5px;
+}
+.e-toolbar-item{
+    transition: all 1s ease-out;
+}
+.e-toolbar-item:hover{
+    font-weight: bold;
+    background: rgba(150, 117, 206,.25);
+    transition: all .7s ease-out;
+}
+.e-toolbar-item.e-schedule-seperator.e-separator{
+    display: none !important;
+}
+.e-schedule-table.e-outer-table > tbody > tr:first-child{
+    background: #9675CE;
+}
+.e-header-cells .e-header-day,.e-header-cells .e-header-date{
+    color: #FFF;
+}
+.e-active-view{
+    background:rgba(150, 117, 206,.25);
+}
+.e-table-wrap.e-agenda-view .e-schedule-table.e-outer-table > tbody > tr:first-child{
+    background: #fff;
+}
+@media only screen and (min-width: 950px) {
+    .margin-cont > .left{
+        margin:20px 18%;
+    }
+    .e-toolbar.e-control[class*='e-toolbar']{
+        height: 55px !important;
+        padding-top: 7px;
+        
+    }
+    .e-toolbar .e-toolbar-items.e-tbar-pos .e-toolbar-right{
+        right: 23vw!important;
+        top: 7px !important;
+    }
+    .e-toolbar-item.e-today.e-overflow-show{
+        position: absolute;
+        left: 30vw;
+        border: 2px solid #9675ce;
+        border-radius: 5px;
+        background: rgb(150 117 206 / .35);
+    }
+    .waitEvent{
+        width: 400px;
+        float: right;
+        margin-right: 150px;
+    }
+}
+@media only screen and (max-width: 949px){
+    .e-toolbar-left{
+        margin-top: 0 !important;
+    }
+    .e-toolbar-right{
+        border: none;
+    }
+}
